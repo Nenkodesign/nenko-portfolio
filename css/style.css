@@ -42,7 +42,7 @@ nav ul li a:hover, .logo:hover {
 
 }
 .portfolio {
-    width: min(90%, 1900px);
+    width: 55%;
     margin: 80px auto;
 }
 
@@ -62,8 +62,6 @@ nav ul li a:hover, .logo:hover {
     );
 
     gap: 30px;
-    width: min(50%, 2000px);
-    margin: 80px auto 0;
 }
 
 .work-card {
