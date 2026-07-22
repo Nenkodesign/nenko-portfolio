@@ -42,7 +42,7 @@ nav ul li a:hover, .logo:hover {
 
 }
 .portfolio {
-    width: 55%;
+    width: 80%;
     margin: 80px auto;
 }
 
@@ -58,7 +58,7 @@ nav ul li a:hover, .logo:hover {
 
     grid-template-columns: repeat(
         auto-fit,
-        minmax(280px, 1fr)
+        minmax(500px, 1fr)
     );
 
     gap: 30px;
@@ -123,11 +123,41 @@ nav ul li a:hover, .logo:hover {
 
 .work-card:hover img{
     transform:scale(1.08);
-    filter:brightness(40%);
+    filter:brightness(100%);
 }
 
 .work-card:hover .overlay{
     opacity:1;
+}
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1vw;
+
+    margin: 100px auto 18px;
+}
+
+.socials a {
+    width: clamp(30px, 8vw, 50px);
+}
+
+.socials img {
+    width: 100%;
+    height: auto;
+     filter: brightness(0) saturate(100%) invert(34%)     
+      sepia(24%) saturate(1504%)   
+      hue-rotate(222deg) brightness(91%) contrast(86%);
+    display: block;
+
+    transition: transform 0.3s;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
