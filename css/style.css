@@ -131,3 +131,40 @@ nav ul li a:hover, .logo:hover {
 .work-card:hover .overlay{
     opacity:1;
 }
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        padding: 30px 5%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+
+    .works-grid {
+        padding-top: 50px;
+        grid-template-columns: 1fr;
+    }
+}
