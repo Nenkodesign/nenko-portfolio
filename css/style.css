@@ -49,8 +49,11 @@ nav ul li a:hover, .logo:hover {
 
 .portfolio h2 {
     text-align: center;
-    color: #6e4ca3;
+    color:#6e4ca3;
     margin-bottom: 40px;
+    font-family: "Covered By Your Grace";
+    font-weight: 400;
+    font-size: 400%;
 }
 
 .works-grid {
@@ -101,7 +104,7 @@ nav ul li a:hover, .logo:hover {
     justify-content:center;
     align-items:center;
 
-    background:rgba(0,0,0,.65);
+    background:rgba(0, 0, 0, 0.65);
 
     color:white;
     text-align:center;
@@ -159,6 +162,116 @@ nav ul li a:hover, .logo:hover {
 .socials img:hover {
     transform: scale(1.1);
 }
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: start;
+
+    margin-bottom: 80px;
+}
+
+.project-title h1 {
+    color: #6e4ca3;
+
+    font-family: "Covered By Your Grace";
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    font-weight: 400;
+    text-align: center;
+    font-size: 500%;
+}
+
+.project-text p {
+    font-family: "Bricolage Grotesque";
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    white-space: pre-line;
+}
+
+.project-gallery {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+
+    gap: 20px;
+
+    margin-top: 80px;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+
+    display: block;
+}
+
+.project-gallery .big {
+    grid-row: 1 / 3;
+}
+.wide {
+    grid-column: 1 / 3;
+}
+
+.vertical-gallery {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+
+    gap: 40px;
+
+    width: min(90%, 900px);
+
+    margin: 80px auto;
+}
+
+.vertical-gallery img {
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: block;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.horizontal-gallery {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    width: min(90%, 1200px);
+
+    margin: 80px auto;
+}
+
+.horizontal-gallery img {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: block;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
 
 @media (max-width: 768px) {
 
@@ -195,5 +308,39 @@ nav ul li a:hover, .logo:hover {
         padding-top: 50px;
         grid-template-columns: 1fr;
         width: 90%;
+    }
+    .project-info {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .project-title {
+        text-align: center;
+    }
+
+    .project-text p {
+        text-align: left;
+    }
+    .project-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .project-gallery .big,
+    .project-gallery .wide {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .project-gallery img {
+        aspect-ratio: 4 / 3;
+    }
+    .vertical-gallery, .horizontal-gallery {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        gap: 20px;
     }
 }
