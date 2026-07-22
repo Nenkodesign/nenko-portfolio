@@ -183,6 +183,15 @@ nav ul li a:hover, .logo:hover {
     text-align: center;
     font-size: 500%;
 }
+.project-text h3 {
+    color: #6e4ca3;
+
+    font-family: "Covered By Your Grace";
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    font-weight: 400;
+    text-align: left;
+}
 
 .project-text p {
     font-family: "Bricolage Grotesque";
