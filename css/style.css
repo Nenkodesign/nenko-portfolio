@@ -16,7 +16,6 @@ nav {
 .new-logo {
     display: block;
 }
-
 .new-logo img {
     width: 210px;
     max-width: 100%;
@@ -45,7 +44,7 @@ nav ul li {
 	display: inline-block;
 	padding: 10px 20px;
 }
-nav ul li a, .logo {
+nav ul li a {
 	color: #6e4ca3;
 	text-decoration: none;
 	font-weight: bold;
@@ -337,7 +336,28 @@ nav ul li a:hover, .logo:hover {
 .neier-gallery img:nth-last-child(-n+2) {
     align-self: start;
 }
+.foot img {
+    width:70px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
 
+    justify-content: center;
+    align-items: center;
+
+    gap: 1vw;
+
+    margin: 10px auto 18px;
+    display: block;
+
+    filter: brightness(0) saturate(100%)
+            invert(34%)
+            sepia(24%)
+            saturate(1504%)
+            hue-rotate(222deg)
+            brightness(91%)
+            contrast(86%);
+}
 @media (max-width: 768px) {
 
     nav {
