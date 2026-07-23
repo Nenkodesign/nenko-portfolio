@@ -13,6 +13,26 @@ nav {
     align-items: center;
     padding: 45px 8% 0;
 }
+.new-logo {
+    display: block;
+}
+
+.new-logo img {
+    width: 210px;
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+
+    filter: brightness(0) saturate(100%)
+            invert(34%)
+            sepia(24%)
+            saturate(1504%)
+            hue-rotate(222deg)
+            brightness(91%)
+            contrast(86%);
+}
+
 nav ul {
     display: flex;
     gap: 40px;
@@ -288,17 +308,21 @@ nav ul li a:hover, .logo:hover {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
 
-        padding: 30px 5%;
+    .new-logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .new-logo img {
+        width: 150px;
     }
 
     nav ul {
-        display: flex;
-        flex-wrap: wrap;
-
         justify-content: center;
-
-        gap: 10px;
+        flex-wrap: wrap;
     }
 
     nav ul li {
@@ -307,6 +331,10 @@ nav ul li a:hover, .logo:hover {
 
     nav ul li a {
         font-size: 18px;
+    }
+
+    .new-logo img {
+        width: 150px;
     }
 
     .logo {
