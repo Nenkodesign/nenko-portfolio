@@ -299,7 +299,7 @@ nav ul li a:hover, .logo:hover {
 
 .neier-gallery {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Всі зображення в колонці */
     gap: 24px;
     width: 100%;
     margin: 0 auto;
@@ -311,7 +311,6 @@ nav ul li a:hover, .logo:hover {
     display: block;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 .horizontal-pair {
     display: flex;
