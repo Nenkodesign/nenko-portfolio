@@ -299,7 +299,15 @@ nav ul li a:hover, .logo:hover {
     width: 100%;
     margin: 0 auto;
 }
-
+.neier-gallery h4 {
+    text-align: center;
+    font-family: "Covered By Your Grace";
+    font-size: clamp(3rem, 5vw, 5rem);
+    color: #917eb7;
+    font-weight: 400;
+    text-align: center;
+    font-size: 500%;
+}
 .neier-gallery img {
     width: 100%;
     height: auto;
