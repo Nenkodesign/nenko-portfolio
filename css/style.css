@@ -292,14 +292,14 @@ nav ul li a:hover, .logo:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.neier-gallery {
+.column-gallery {
     display: flex;
     flex-direction: column; /* Всі зображення в колонці */
     gap: 24px;
     width: 100%;
     margin: 0 auto;
 }
-.neier-gallery h4 {
+.column-gallery h4 {
     text-align: center;
     font-family: "Covered By Your Grace";
     font-size: clamp(3rem, 5vw, 5rem);
@@ -308,7 +308,7 @@ nav ul li a:hover, .logo:hover {
     text-align: center;
     font-size: 500%;
 }
-.neier-gallery img {
+.column-gallery img {
     width: 100%;
     height: auto;
     display: block;
@@ -449,7 +449,7 @@ nav ul li a:hover, .logo:hover {
 
         gap: 20px;
     }
-    .neier-gallery{
+    .column-gallery{
         grid-template-columns:1fr;
         gap:20px;
     }
