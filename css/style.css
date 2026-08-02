@@ -429,6 +429,9 @@ nav ul li a:hover, .logo:hover {
     .project-text p {
         text-align: left;
     }
+    .overlay h2 {
+        font-size: 20px; /* Зменшуємо розмір тексту для мобільних пристроїв */
+    }
     .project-gallery {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
