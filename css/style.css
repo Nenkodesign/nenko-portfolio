@@ -369,170 +369,106 @@ nav ul li a:hover, .logo:hover {
             brightness(91%)
             contrast(86%);
 }
-.resume {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-
-    padding: 80px 0;
-}
-
-.resume-intro {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 80px;
-
-    align-items: start;
-
-    margin-bottom: 80px;
-}
-
-.resume-intro .project-text {
-    width: 100%;
-}
-
-.foto-info {
-    width: 100%;
-}
-.foto-info img {
-    width: 100%;
-    height: auto;
-
-    display: block;
-
-    object-fit: cover;
-}
-
-.resume-intro .project-text {
-    width: 100%;
-}
-
-.resume-intro .project-text p {
-    margin: 0;
-
-    color: white;
-
-    font-family: "Montserrat";
-
-    font-size: 1.1rem;
-
-    line-height: 1.8;
-}
-/* =========================
-   RESUME TABLE
-   ========================= */
-
-.resume {
-    width: 100%;
-    max-width: none;
-
-    margin: 0;
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 40px;
-
-    padding: 0 0 80px;
-}
-.resume-column h3 {
-    color: #917eb7;
-
-    font-family: "Ubuntu Condensed";
-
-    font-size: 1.5rem;
-
-    font-weight: 400;
-
-    margin: 0 0 30px;
-
-    padding-bottom: 12px;
-
-    border-bottom: 1px solid #917eb7;
-}
-
-.resume-item {
-    margin-bottom: 30px;
-}
-.resume-item h4 {
-    color: white;
-
-    font-family: "Montserrat";
-
-    font-size: 0.95rem;
-
-    font-weight: 500;
-
-    line-height: 1.4;
-
-    margin: 0 0 8px;
-}
-
-.resume-item p {
-    color: white;
-
-    font-family: "Montserrat";
-
-    font-size: 0.9rem;
-
-    line-height: 1.5;
-
-    margin: 0 0 5px;
-}
-.resume-column {
-    min-width: 0;
-}
 .resume-body {
     width: 90%;
     max-width: 1400px;
     margin: 80px auto 0;
-}
-.resume-column h3 {
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0 0 30px;
-    padding-bottom: 12px;
+    }
 
-    border-bottom: 1px solid #000;
-}
+    .resume-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-bottom: 100px;
+    }
 
-.resume-item {
-    margin-bottom: 30px;
-}
+    .foto-info {
+        width: 100%;
+    }
 
-.resume-item h4 {
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0 0 5px;
-}
-
-.resume-item p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 0;
-}
-
-
-.resume-item span {
+   .foto-info img {
+    width: 100%;
+    height: auto;
     display: block;
+    }
 
-    color: #917eb7;
+    .resume-intro .project-text {
+    width: 100%;
+    }
+    
+    .resume-intro .project-text p {
+        color: white;
+        font-family: "Montserrat";
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin: 0;
+    }
 
-    font-family: "Montserrat";
+    /* RESUME */
 
-    font-size: 0.75rem;
+    .resume {
+        width: 100%;
+        display: grid;
 
-    line-height: 1.4;
+        /* 4 КОЛОНКИ НА ВЕЛИКОМУ ЕКРАНІ */
+        grid-template-columns: repeat(4, minmax(0, 1fr));
 
-    margin-top: 8px;
-}
+        gap: 40px;
+
+        padding: 0 0 80px;
+    }
+    .resume-column {
+        min-width: 0;
+    }
+    .resume-column h3 {
+        color: #917eb7;
+        font-family: "Ubuntu Condensed";
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        margin: 0 0 30px;
+        padding-bottom: 12px;
+
+        border-bottom: 1px solid #917eb7;
+    }
+    .resume-item {
+        margin-bottom: 30px;
+    }
+    .resume-item h4 {
+        color: white;
+
+        font-family: "Montserrat";
+        font-size: 0.95rem;
+        font-weight: 500;
+
+        line-height: 1.4;
+
+        margin: 0 0 8px;
+    }
+    .resume-item p {
+        color: white;
+
+        font-family: "Montserrat";
+        font-size: 0.9rem;
+
+        line-height: 1.5;
+
+        margin: 0 0 5px;
+    }
+    .resume-item span {
+        display: block;
+
+        color: #917eb7;
+
+        font-family: "Montserrat";
+        font-size: 0.75rem;
+
+        line-height: 1.4;
+
+        margin-top: 8px;
+    }
+
 
 @media (max-width: 768px) {
 
@@ -627,10 +563,7 @@ nav ul li a:hover, .logo:hover {
 
     .resume-intro {
         grid-template-columns: 1fr;
-
         gap: 40px;
-
-        margin-bottom: 60px;
     }
 
     .foto-info {
@@ -652,15 +585,14 @@ nav ul li a:hover, .logo:hover {
 
     .resume {
         grid-template-columns: 1fr;
-
         gap: 50px;
     }
 
 }
 @media (max-width: 900px) {
 
-    .resume {
-        grid-template-columns: repeat(2, 1fr);
+.resume {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 50px 30px;
     }
 
