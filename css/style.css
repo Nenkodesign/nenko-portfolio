@@ -45,7 +45,7 @@ nav ul li a {
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
-	font-family: "Ubuntu Condensed";
+	font-family: "Montserrat";
   	font-weight: 400;
 }
 nav ul li a {
@@ -67,7 +67,7 @@ nav ul li a:hover, .logo:hover {
     color:#917eb7;
     margin-bottom: 40px;
     font-family: "Montserrat";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 400%;
 }
 
@@ -119,9 +119,9 @@ nav ul li a:hover, .logo:hover {
     justify-content:center;
     align-items:center;
 
-    background:rgba(255, 255, 255, 0.65);
+    background:rgba(0, 0, 0, 0.65);
 
-    color:white;
+    color:rgb(255, 255, 255);
     text-align:center;
 
     opacity:0;
@@ -192,18 +192,18 @@ nav ul li a:hover, .logo:hover {
 .project-title h1 {
     color: #917eb7;
 
-    font-family: "Ubuntu Condensed";
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-family: "Montserrat";
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
 
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
 }
 .project-text h3 {
     color: #917eb7;
 
-    font-family: "Ubuntu Condensed";
+    font-family: "Montserrat";
 
-    font-size:clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size:clamp(1rem, 2vw, 2rem);
     font-weight: 400;
     text-align: left;
 }
@@ -361,13 +361,7 @@ nav ul li a:hover, .logo:hover {
     margin: 40px auto 18px;
     display: block;
 
-    filter: brightness(0) saturate(100%)
-            invert(34%)
-            sepia(24%)
-            saturate(1504%)
-            hue-rotate(222deg)
-            brightness(91%)
-            contrast(86%);
+    filter: brightness(0) saturate(100%) invert(57%) sepia(17%) saturate(872%) hue-rotate(218deg) brightness(89%) contrast(85%);
 }
   .resume {
     width: 100%;
@@ -428,7 +422,7 @@ nav ul li a:hover, .logo:hover {
     }
     .resume-column h3 {
     color: #917eb7;
-    font-family: "Ubuntu Condensed";
+    font-family: "Montserrat";
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 0 30px;
