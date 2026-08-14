@@ -369,71 +369,75 @@ nav ul li a:hover, .logo:hover {
             brightness(91%)
             contrast(86%);
 }
-.resume-body {
-    width: 90%;
-    max-width: 1400px;
-    margin: 80px auto 0;
-    }
-
-    .resume-intro {
+  .resume {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
+    grid-template-columns: repeat(4, 1fr); /* 4 рівні колонки */
+    gap: 40px;
+    padding: 0 0 80px;
+    align-items: start; 
+    }
+    
+
+.resume-body {
+    width: 80%; /* Займає 80% ширини екрану (10% відступ з кожного боку) */
+    max-width: 1400px; /* Максимальна ширина для великих екранів */
+    margin: 80px auto 0; /* Центрує блок по горизонталі */
+}
+.resume-intro {
+    display: flex; /* Використовуємо flexbox */
+    flex-direction: row; /* Розташовуємо елементи в рядок */
+    align-items: center; /* Вирівнюємо елементи по вертикальній центровій лінії */
+    justify-content: center; /* Центруємо вміст по горизонталі */
+    gap: 20px; /* Відстань між фото і текстом */
     margin-bottom: 100px;
-    }
+    width: 100%;
+}
 
-    .foto-info {
-        width: 100%;
-    }
 
-   .foto-info img {
+.foto-info {
+    flex: 0 0 auto; /* Фото не розтягується */
+    max-width: 400px; /* Обмежуємо максимальну ширину фото */
+    margin: 0; /* Прибираємо відступи */
+}
+
+    .foto-info img {
     width: 100%;
     height: auto;
     display: block;
+    margin: 0 0 0;
+    border-radius: 10px;
     }
-
-    .resume-intro .project-text {
-    width: 100%;
-    }
-    
+.resume-intro .project-text {
+    flex: 1; /* Текст займає решту простору */
+    max-width: 600px; /* Обмежуємо ширину тексту */
+    margin: 0 0 0 50px;
+}
     .resume-intro .project-text p {
-        color: white;
-        font-family: "Montserrat";
-        font-size: 1.1rem;
-        line-height: 1.8;
-        margin: 0;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
     }
 
-    /* RESUME */
-
-    .resume {
-        width: 100%;
-        display: grid;
-
-        /* 4 КОЛОНКИ НА ВЕЛИКОМУ ЕКРАНІ */
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-
-        gap: 40px;
-
-        padding: 0 0 80px;
-    }
     .resume-column {
-        min-width: 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column; 
     }
     .resume-column h3 {
-        color: #917eb7;
-        font-family: "Ubuntu Condensed";
-        font-size: 1.5rem;
-        font-weight: 400;
-
-        margin: 0 0 30px;
-        padding-bottom: 12px;
-
-        border-bottom: 1px solid #917eb7;
-    }
+    color: #917eb7;
+    font-family: "Ubuntu Condensed";
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 30px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #917eb7;
+}
     .resume-item {
         margin-bottom: 30px;
+        width: 100%;    
     }
     .resume-item h4 {
         color: white;
@@ -441,9 +445,7 @@ nav ul li a:hover, .logo:hover {
         font-family: "Montserrat";
         font-size: 0.95rem;
         font-weight: 500;
-
         line-height: 1.4;
-
         margin: 0 0 8px;
     }
     .resume-item p {
@@ -561,16 +563,28 @@ nav ul li a:hover, .logo:hover {
         width: 90%;
     }
 
+
     .resume-intro {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
+    flex-direction: column; /* Розташовуємо в стовпчик */
+    align-items: center; /* Центруємо по горизонталі */
+    gap: 40px; /* Відстань між фото і текстом */
+    margin-bottom: 100px;
+    width: 100%;
+}
 
     .foto-info {
-        width: 100%;
+    width: 100%; /* Фото займає всю ширину на мобільних екранах */
+    max-width: 100%; /* Обмежуємо максимальну ширину */
+    margin-left: 0; /* Прибираємо відступ від лівого краю */
+}
+
+    .resume-intro .project-text {
+    width: 100%;
+    margin-left: 0; 
+    text-align: center;/* Прибираємо відступ від фото */
     }
 
-    .foto-info img {
+        .foto-info img {
         width: 100%;
     }
 
@@ -584,16 +598,16 @@ nav ul li a:hover, .logo:hover {
     /* RESUME */
 
     .resume {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Одна колонка на мобільних екранах */
         gap: 50px;
     }
-
 }
+
 @media (max-width: 900px) {
 
 .resume {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 50px 30px;
-    }
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на екранах до 900px */
+    gap: 50px 30px;
+}
 
 }
