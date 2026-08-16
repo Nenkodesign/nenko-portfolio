@@ -60,9 +60,8 @@ nav ul li a:hover, .logo:hover {
 .portfolio {
     width: 80%;
     margin: 60px auto; /* Центруємо контейнер по горизонталі */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Центруємо вміст по горизонталі */
+    padding: 0 10%;
+    box-sizing: border-box;
 }
 
 
@@ -472,7 +471,10 @@ nav ul li a:hover, .logo:hover {
         align-items: center;
         gap: 20px;
     }
-
+    .portfolio {
+        width: 100%; /* Займає всю ширину екрану */
+        padding: 0 5%; /* Невеликі відступи з боків */
+    }
     .new-logo {
         display: flex;
         justify-content: center;
@@ -508,8 +510,8 @@ nav ul li a:hover, .logo:hover {
 
     .works-grid {
         grid-template-columns: 1fr; /* Одна колонка на мобільних екранах */
-        width: 100%; /* Займає всю ширину батьківського контейнера */
-        margin: 0 auto; /* Центруємо сітку */
+        width: 100%;
+        margin: 0 auto;
     }
     .project-info {
         grid-template-columns: 1fr;
