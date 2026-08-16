@@ -56,10 +56,15 @@ nav ul li a:hover, .logo:hover {
 	transition: 0.4s;
 
 }
+
 .portfolio {
     width: 80%;
-    margin: 60px auto;
+    margin: 60px auto; /* Центруємо контейнер по горизонталі */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо вміст по горизонталі */
 }
+
 
 
 .portfolio h2 {
@@ -73,15 +78,12 @@ nav ul li a:hover, .logo:hover {
 
 .works-grid {
     display: grid;
-
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(500px, 1fr)
-    );
-
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px;
+    width: 100%; /* Займає всю ширину батьківського контейнера */
+    margin: 0 auto; /* Центруємо сітку, якщо потрібно */
 }
-   
+
 .work-card {
     position: relative;
 
@@ -504,11 +506,10 @@ nav ul li a:hover, .logo:hover {
         font-size: 48px;
     }
 
- .works-grid {
-        padding-top: 50px;
-        grid-template-columns: 1fr;
-        width: 90%;
-        margin: 0 auto; /* Центруємо сітку по горизонталі */
+    .works-grid {
+        grid-template-columns: 1fr; /* Одна колонка на мобільних екранах */
+        width: 100%; /* Займає всю ширину батьківського контейнера */
+        margin: 0 auto; /* Центруємо сітку */
     }
     .project-info {
         grid-template-columns: 1fr;
