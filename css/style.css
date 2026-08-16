@@ -58,7 +58,7 @@ nav ul li a:hover, .logo:hover {
 }
 
 .portfolio {
-    width: 80%;
+    width: 100%;
     margin: 60px auto; /* Центруємо контейнер по горизонталі */
     padding: 0 10%;
     box-sizing: border-box;
