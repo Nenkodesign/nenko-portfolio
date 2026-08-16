@@ -509,7 +509,7 @@ nav ul li a:hover, .logo:hover {
     .works-grid {
         grid-template-columns: 1fr; /* Одна колонка на мобільних екранах */
         width: 100%; /* Займає всю ширину батьківського контейнера */
-        margin: 0 auto; /* Центруємо сітку */
+        margin: 0 auto 0 25px; /* Центруємо сітку */
     }
     .project-info {
         grid-template-columns: 1fr;
