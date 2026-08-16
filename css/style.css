@@ -300,14 +300,11 @@ nav ul li a:hover, .logo:hover {
     width: 100%;
     margin: 0 auto;
 }
-.column-gallery h1 {
+   h1 {
     color: #917eb7;
-
     font-family: "Montserrat";
     font-size: clamp(2rem, 3.5vw, 3.5rem);
-
     font-weight: 600;
-    text-align: center;
 }
 .column-gallery img {
     width: 100%;
@@ -552,7 +549,6 @@ nav ul li a:hover, .logo:hover {
     .column-gallery{
         grid-template-columns:1fr;
         gap:20px;
-        text-align: center;
     }
     .column-gallery
      .resume-body {
