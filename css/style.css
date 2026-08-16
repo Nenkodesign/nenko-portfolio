@@ -552,7 +552,9 @@ nav ul li a:hover, .logo:hover {
     .column-gallery{
         grid-template-columns:1fr;
         gap:20px;
+        text-align: center;
     }
+    .column-gallery
      .resume-body {
         width: 90%;
     }
