@@ -504,10 +504,11 @@ nav ul li a:hover, .logo:hover {
         font-size: 48px;
     }
 
-    .works-grid {
+ .works-grid {
         padding-top: 50px;
         grid-template-columns: 1fr;
         width: 90%;
+        margin: 0 auto; /* Центруємо сітку по горизонталі */
     }
     .project-info {
         grid-template-columns: 1fr;
