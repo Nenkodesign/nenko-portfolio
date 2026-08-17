@@ -383,13 +383,13 @@ nav ul li a:hover, .logo:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 рівні колонки */
     gap: 40px;
-    padding: 0 0 80px;
+    padding: 0 15% 80px;
     align-items: start; 
     }
     
 
 .resume-body {
-    width: 80%; /* Займає 80% ширини екрану (10% відступ з кожного боку) */
+    width: 60%; /* Займає 80% ширини екрану (10% відступ з кожного боку) */
     max-width: 1400px; /* Максимальна ширина для великих екранів */
     margin: 80px auto 0; /* Центрує блок по горизонталі */
 }
