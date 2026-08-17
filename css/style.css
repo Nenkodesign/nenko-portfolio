@@ -313,7 +313,24 @@ nav ul li a:hover, .logo:hover {
     display: block;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+.column-gallery h3 {
+        color: #917eb7;
 
+    font-family: "Montserrat";
+
+    font-size:clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    text-align: left;
+}
+.column-gallery h2 {
+        color: #917eb7;
+
+    font-family: "Montserrat";
+
+    font-size:clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    text-align: center;
+}
 .horizontal-pair {
     display: flex;
     gap: 0; 
