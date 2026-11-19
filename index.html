@@ -7,91 +7,133 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="ico/favicon.svg">
 </head>
-<body>
+<body class="home-page">
      <div class="head">
-     	<nav>
-			<a href="index.html" class="new-logo"><img src="ico/nenko logo-02.svg"></a>
-     		<ul>
+     	<nav class="site-nav">
+			<a href="index.html" class="new-logo">Anastasiia Chernenko</a>
+			<button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-links"><span></span><span></span><span></span></button>
+	     	<ul class="nav-links" id="site-links">
 		         <li><a href="index.html">Works</a></li>
      		     <li><a href="resume.html">Resume</a></li>
 				 <li><a href="mailto:hellonenkoo@gmail.com" data-type="Link" data-id="hellonenkoo@gmail.com">Contact</a></li>
      		</ul>
      	</nav>
      </div>
-	<div class="portfolio">
-	 <div class="works-grid">
+	<main class="work-carousel" aria-label="Selected projects" data-carousel>
+		<article class="carousel-slide is-active" aria-hidden="false">
+			<img src="img/home1.png" alt="My Paper Home installation">
+			<div class="slide-caption"><p class="slide-category">01 / Installation</p><h1>My Paper Home</h1><p class="slide-description">An installation about how war transforms the meaning of home.</p><a href="works/home.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/neier.png" alt="Neier Apartments branding">
+			<div class="slide-caption"><p class="slide-category">02 / Branding</p><h1>Neier Apartments</h1><p class="slide-description">A flexible identity balancing mountain adventure and comfort.</p><a href="works/neier.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/mixtape.jpg" alt="Let Yourself Melt illustration">
+			<div class="slide-caption"><p class="slide-category">03 / Illustration</p><h1>Let Yourself Melt</h1><p class="slide-description">An illustration-led visual world for Let Yourself Melt.</p><a href="works/mixtape.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/sozialmarie.png" alt="SozialMarie animation">
+			<div class="slide-caption"><p class="slide-category">04 / Animation</p><h1>SozialMarie</h1><p class="slide-description">An animated project for SozialMarie.</p><a href="works/sozialmarie.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/rataufdraht.png" alt="Rat auf Draht illustration">
+			<div class="slide-caption"><p class="slide-category">05 / Illustration</p><h1>Rat auf Draht</h1><p class="slide-description">Illustration for Rat auf Draht.</p><a href="works/rataufdraht.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/honey.jpg" alt="Honey, We Need to Talk poster design">
+			<div class="slide-caption"><p class="slide-category">06 / Poster design</p><h1>honey, we need to talk!</h1><p class="slide-description">A poster design for the conversations we need to have.</p><a href="works/honey.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/spiegel.png" alt="Der Spiegel illustration">
+			<div class="slide-caption"><p class="slide-category">07 / Illustration</p><h1>Der Spiegel</h1><p class="slide-description">Editorial illustration for Der Spiegel.</p><a href="works/spiegel.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/taras.png" alt="Taras among us logo design">
+			<div class="slide-caption"><p class="slide-category">08 / Logo design</p><h1>Taras among us</h1><p class="slide-description">A logo design for Taras among us.</p><a href="works/taras.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
+		<article class="carousel-slide" aria-hidden="true">
+			<img src="img/soju.jpg" alt="Soju package design">
+			<div class="slide-caption"><p class="slide-category">09 / Package design</p><h1>Soju</h1><p class="slide-description">A packaging design concept for soju.</p><a href="works/soju.html">View project <span aria-hidden="true">&rarr;</span></a></div>
+		</article>
 
-		<a href="works/home.html" class="work-card">
-			<img src="img/home.png" alt="Installation">
-			<div class="overlay">
-				<h2>My Paper Home</h2>
+		<div class="carousel-ui">
+			<div class="carousel-status">
+				<span class="carousel-count" aria-live="polite">01 / 09</span>
+				<div class="carousel-progress" aria-label="Choose a project"></div>
 			</div>
-		</a>
-		
-		<a href="works/neier.html" class="work-card">
-			<img src="img/neier.png" alt="Branding">
-			<div class="overlay">
-				<h2>Neier Apartments</h2>
+			<div class="carousel-controls">
+				<button class="carousel-button" type="button" data-previous aria-label="Previous project">&larr;</button>
+				<button class="carousel-button" type="button" data-next aria-label="Next project">&rarr;</button>
 			</div>
-		</a>
-		
-		<a href="works/mixtape.html" class="work-card">
-			<img src="img/mixtape.jpg" alt="Illustration">
-			<div class="overlay">
-				<h2>Let Yourself Melt</h2>
-			</div>
-		</a>
+		</div>
+	</main>
+	<script src="js/navigation.js"></script>
+	<script>
+		const carousel = document.querySelector('[data-carousel]');
+		const slides = [...carousel.querySelectorAll('.carousel-slide')];
+		const progress = carousel.querySelector('.carousel-progress');
+		const count = carousel.querySelector('.carousel-count');
+		let currentSlide = 0;
+		let pointerStart = null;
 
-		<a href="works/sozialmarie.html" class="work-card">
-			<img src="img/sozialmarie.png" alt="Animation">
-			<div class="overlay">
-				<h2>SozialMarie</h2>
-			</div>
-		</a>
+		const indicators = slides.map((slide, index) => {
+			const indicator = document.createElement('button');
+			indicator.type = 'button';
+			indicator.className = 'carousel-indicator';
+			indicator.setAttribute('aria-label', `Show ${slide.querySelector('h1').textContent}`);
+			indicator.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
+			indicator.addEventListener('click', () => showSlide(index));
+			progress.append(indicator);
+			return indicator;
+		});
 
-		<a href="works/rataufdraht.html" class="work-card">
-			<img src="img/rataufdraht.png" alt="Illustration">
-			<div class="overlay">
-				<h2>Rat auf Draht</h2>
-			</div>
-		</a>
+		function showSlide(index) {
+			currentSlide = (index + slides.length) % slides.length;
+			slides.forEach((slide, slideIndex) => {
+				const active = slideIndex === currentSlide;
+				slide.classList.toggle('is-active', active);
+				slide.setAttribute('aria-hidden', String(!active));
+				indicators[slideIndex].setAttribute('aria-pressed', String(active));
+			});
+			count.textContent = `${String(currentSlide + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+		}
 
-		<a href="works/honey.html" class="work-card">
-			<img src="img/honey.jpg" alt="Poster design">
-			<div class="overlay">
-				<h2>honey, we need to talk!</h2>
-			</div>
-		</a>
+		carousel.querySelector('[data-previous]').addEventListener('click', () => showSlide(currentSlide - 1));
+		carousel.querySelector('[data-next]').addEventListener('click', () => showSlide(currentSlide + 1));
 
-		<a href="works/spiegel.html" class="work-card">
-			<img src="img/spiegel.png" alt="Illustration">
-			<div class="overlay">
-				<h2>Der Spiegel</h2>
-			</div>
-		</a>
+		carousel.addEventListener('click', (event) => {
+			const slide = event.target.closest('.carousel-slide');
+			if (!slide?.classList.contains('is-active') || event.target.closest('a, button') || window.matchMedia('(max-width: 768px)').matches) return;
+			showSlide(currentSlide + (event.clientX < window.innerWidth / 2 ? -1 : 1));
+		});
 
-		<a href="works/taras.html" class="work-card">
-			<img src="img/taras.png" alt="Logo design">
-			<div class="overlay">
-				<h2>Taras among us</h2>
-			</div>
-		</a>
+		document.addEventListener('keydown', (event) => {
+			if (event.key === 'ArrowLeft') showSlide(currentSlide - 1);
+			if (event.key === 'ArrowRight') showSlide(currentSlide + 1);
+		});
 
-		<a href="works/soju.html" class="work-card">
-			<img src="img/soju.jpg" alt="Package design">
-			<div class="overlay">
-				<h2>Soju</h2>
-			</div>
-		</a>
-	 </div>
-	</div>
-    <div class="foot">
-		<img src="ico/nenko logo-01.svg">
-        <h2>2026 © Nenko.</h2>
-	</div>
+		carousel.addEventListener('pointerdown', (event) => {
+			if (event.pointerType !== 'touch') return;
+			pointerStart = { x: event.clientX, y: event.clientY };
+		});
+		carousel.addEventListener('pointerup', (event) => {
+			if (!pointerStart || event.pointerType !== 'touch') return;
+			const deltaX = event.clientX - pointerStart.x;
+			const deltaY = event.clientY - pointerStart.y;
+			pointerStart = null;
+			if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
+				showSlide(currentSlide + (deltaX < 0 ? 1 : -1));
+			}
+		});
+		carousel.addEventListener('pointercancel', () => {
+			pointerStart = null;
+		});
+	</script>
 </body>
 </html>
